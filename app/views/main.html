@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="cd-auto-hide-header">
-            <div class="logo"><a href="#0"><img src="/public/images/BandOfMe100x100.png" alt="Logo" height="75px"></a></div>
+            <div class="logo"><a href="#0"><img src="/public/images/BandOfMe100x100.png" alt="Logo" height="55px"></a></div>
 
             <nav class="cd-primary-nav">
                 <a href="#cd-navigation" class="nav-trigger">
@@ -24,11 +24,8 @@
                 </a> <!-- .nav-trigger -->
 
                 <ul id="cd-navigation">
-                    <li><a href="#0">The team</a></li>
-                    <li><a href="#0">Our Products</a></li>
-                    <li><a href="#0">Our Services</a></li>
-                    <li><a href="#0">Shopping tools</a></li>
-                    <li><a href="#0">Contact Us</a></li>
+                    <li><a href="#0">Home</a></li>
+                    <li><a href="#0">About</a></li>
                 </ul>
             </nav> <!-- .cd-primary-nav -->
         </header> <!-- .cd-auto-hide-header -->
@@ -37,7 +34,47 @@
 
         <section class="cd-hero">
             <div class="cd-hero-content">
-                <!-- your content here -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="50%"   id="band-of-me">
+                <defs>
+                <style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;}</style>
+                </defs>
+                <title>Asset 2</title>
+                <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                <line class="cls-1" x1="1" y1="1" x2="1" y2="120.44"/>
+                <path class="cls-1" d="M1,48.16H12A23.58,23.58,0,0,0,12,1H1"/>
+                <path class="cls-1" d="M1,120.44H17.86a36.14,36.14,0,0,0,0-72.28H1"/>
+                <line class="cls-1" x1="5.69" y1="1" x2="5.69" y2="120.44"/>
+                <circle class="cls-1" cx="95.31" cy="84.3" r="36.14"/>
+                <line class="cls-1" x1="95.31" y1="120.44" x2="95.31" y2="48.16"/>
+                <line class="cls-1" x1="59.17" y1="30.01" x2="131.45" y2="30.01"/>
+                <line class="cls-1" x1="131.45" y1="120.44" x2="131.45" y2="30.01"/>
+                <line class="cls-1" x1="138.78" y1="30.01" x2="138.78" y2="120.44"/>
+                <line class="cls-1" x1="198.15" y1="120.44" x2="138.78" y2="30.01"/>
+                <line class="cls-1" x1="198.15" y1="30.01" x2="198.15" y2="120.44"/>
+                <line class="cls-1" x1="137.81" y1="30.01" x2="144.39" y2="30.01"/>
+                <line class="cls-1" x1="198.15" y1="111.9" x2="144.39" y2="30.01"/>
+                <line class="cls-1" x1="138.78" y1="120.44" x2="177.03" y2="88.27"/>
+                <circle class="cls-1" cx="239.89" cy="84.3" r="36.14"/>
+                <line class="cls-1" x1="271.87" y1="1" x2="271.87" y2="120.44"/>
+                <line class="cls-1" x1="276.19" y1="0.97" x2="276.19" y2="120.41"/>
+                <line class="cls-1" x1="214.62" y1="58.63" x2="265.17" y2="109.18"/>
+                <circle class="cls-1" cx="43.42" cy="181.75" r="17.98"/>
+                <line class="cls-1" x1="43.42" y1="200.03" x2="43.42" y2="164.07"/>
+                <line class="cls-1" x1="25.44" y1="182.05" x2="43.42" y2="182.05"/>
+                <path class="cls-1" d="M88.35,157.51V152a11.73,11.73,0,0,0-23.46,0v47.69"/>
+                <line class="cls-1" x1="61.4" y1="164.07" x2="74.14" y2="164.07"/>
+                <line class="cls-1" x1="112.78" y1="219.65" x2="112.78" y2="129.22"/>
+                <line class="cls-1" x1="172.15" y1="129.22" x2="112.78" y2="219.65"/>
+                <line class="cls-1" x1="172.15" y1="219.65" x2="172.15" y2="129.22"/>
+                <line class="cls-1" x1="111.81" y1="219.65" x2="118.39" y2="219.65"/>
+                <line class="cls-1" x1="172.15" y1="137.76" x2="118.39" y2="219.65"/>
+                <line class="cls-1" x1="112.78" y1="129.22" x2="151.03" y2="161.38"/>
+                <path class="cls-1" d="M250.18,187.56a36.06,36.06,0,1,0-1.61,10.08"/>
+                <line class="cls-1" x1="178.03" y1="186.66" x2="249.53" y2="186.66"/>
+                </g>
+                </g>
+                </svg>
             </div>
         </section> <!-- .cd-hero -->
 
@@ -89,6 +126,7 @@
         #{doLayout /}
         
         <script src="@{'/public/javascripts/jquery-3.0.0.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
         #{get 'moreScripts' /}
         <script src="@{'/public/javascripts/main.js'}"></script> <!-- Resource jQuery -->
     </body>

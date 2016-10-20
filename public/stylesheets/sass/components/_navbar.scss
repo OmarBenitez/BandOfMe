@@ -464,3 +464,13 @@ Intro Section
 		margin-top: $header-height;
 	}
 }
+
+#band-of-me {
+    @include MQ(XS) {
+        opacity: 0;
+    }
+    
+    @include MQ(L) { 
+        opacity: 1;
+    }
+}
