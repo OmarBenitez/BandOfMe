@@ -25,8 +25,8 @@ body {
 		size: 1.6rem;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
-	color: $color-1;
-	background-color: $color-4;
+	color: $text-reg;
+	background-color: $bg;
 	@include font-smoothing;
 }
 
@@ -41,14 +41,14 @@ a {
 
 -------------------------------- */
 
-.cd-auto-hide-header {
+.auto-hide-header {
 	position: fixed;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: $header-height-small;
-	background-color: $color-3;
+	background-color: $nav-blue;
 	@include clearfix;
 	/* Force Hardware Acceleration */
 	transform: translateZ(0);
@@ -64,13 +64,13 @@ a {
 	}
 }
 
-.cd-auto-hide-header .logo, 
-.cd-auto-hide-header .nav-trigger {
+.auto-hide-header .logo, 
+.auto-hide-header .nav-trigger {
 	position: absolute;
 	@include center(y);
 }
 
-.cd-auto-hide-header .logo {
+.auto-hide-header .logo {
 	left: 5%;
 
 	a, img {
@@ -78,14 +78,14 @@ a {
 	}
 }
 
-.cd-auto-hide-header .nav-trigger {
+.auto-hide-header .nav-trigger {
 	/* vertically align its content */
 	display: table;
 	height: 100%;
 	padding: 0 1em;
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	color: $color-1;
+	color: $text-reg;
 	font-weight: bold;
 	right: 0;
 	border-left: 1px solid shade($color-3, 5%);
@@ -102,7 +102,7 @@ a {
 		position: relative;
 		height: 2px;
 		width: 22px;
-		background-color: $color-1;
+		background-color: $text-reg;
 		backface-visibility: hidden;
 	}
 
@@ -134,7 +134,7 @@ a {
 	}
 }
 
-.cd-auto-hide-header.nav-open .nav-trigger {
+.auto-hide-header.nav-open .nav-trigger {
 	em {
 		/* transform menu icon into a 'X' icon */
 		background-color: rgba($color-3, 0);
@@ -151,7 +151,7 @@ a {
 	}
 }
 
-.cd-primary-nav {
+.primary-nav {
 	display: inline-block;
 	float: right;
 	height: 100%;
@@ -173,7 +173,7 @@ a {
 			height: 50px;
 			line-height: 50px;
 			padding-left: 5%;
-			color: $color-1;
+			color: $text-reg;
 			font-size: 1.8rem;
 			border-top: 1px solid shade($color-3, 5%);
 
@@ -221,8 +221,8 @@ a {
 	}
 }
 
-.nav-open .cd-primary-nav ul, 
-.cd-primary-nav ul:target {
+.nav-open .primary-nav ul, 
+.primary-nav ul:target {
 	/* 
 		show primary nav - mobile only 
 		:target is used to show navigation on no-js devices
@@ -240,13 +240,13 @@ a {
 
 -------------------------------- */
 
-.cd-secondary-nav {
+.secondary-nav {
 	position: relative;
 	z-index: 1;
 	clear: both;
 	width: 100%;
 	height: $secondary-nav-height-small;
-	background-color: $color-1;
+	background-color: $nav-blue;
 	/* Force Hardware Acceleration */
 	transform: translateZ(0);
 	will-change: transform;
@@ -262,7 +262,7 @@ a {
 		height: 100%;
 		width: 35px;
 		background: transparent;
-		background: linear-gradient(to left, $color-1, rgba($color-1, 0));
+		background: linear-gradient(to left, $nav-blue, rgba($nav-blue, 0));
 		pointer-events: none;
 		transition: opacity .2s;
 	}
@@ -327,7 +327,7 @@ a {
 			line-height: $secondary-nav-height;
 
 			&.active {
-				box-shadow: inset 0 -3px $color-2;
+				box-shadow: inset 0 -3px $blue;
 			}
 		}
 	}
@@ -339,7 +339,7 @@ a {
 
 -------------------------------- */
 
-.cd-secondary-nav {
+.secondary-nav {
 	&.fixed {
 		position: fixed;
 		top: $header-height-small;
@@ -354,7 +354,7 @@ a {
 		&.fixed {
 			top: $header-height;
 			/* fixes a bug where nav and subnab move with a slight delay */
-			box-shadow: 0 -6px 0 $color-1;
+			box-shadow: 0 -6px 0 $nav-blue;
 		}
 
 		&.slide-up {
@@ -370,7 +370,7 @@ Main content
 
 -------------------------------- */
 
-.cd-main-content {
+.main-content {
 	padding: $header-height-small 5% 2em;
 	overflow: hidden;
 
@@ -393,7 +393,7 @@ Main content
 		line-height: 1.6;
 		margin: 2em auto;
 		font-family: $secondary-font;
-		color: shade($color-4, 30%);
+		color: $text-reg;
 	}
 
 	@include MQ(L) {
@@ -407,9 +407,6 @@ Main content
 			margin-top: $secondary-nav-height;
 		}
 
-		p {
-			font-size: 2.4rem;
-		}
 	}
 }
 
@@ -419,8 +416,8 @@ Main content
 	http://nicolasgallagher.com/jump-links-and-viewport-positioning/
 */
 
-.cd-main-content.sub-nav :target::before,
-.cd-main-content.sub-nav-hero :target::before { 
+.main-content.sub-nav :target::before,
+.main-content.sub-nav-hero :target::before { 
 	display: block;
   	content: ""; 
   	margin-top: -$secondary-nav-height-small; 
@@ -439,16 +436,16 @@ Intro Section
 
 -------------------------------- */
 
-.cd-hero {
+.hero {
 	/* vertically align its content */
 	display: table;
 	width: 100%;
 	margin-top: $header-height-small;
 	height: 300px;
-	background: url(/public/images/hero-bg.jpg) no-repeat center center;
+	background: url(/public/images/hero-bg.svg) no-repeat center center;
 	background-size: cover;
 
-	.cd-hero-content {
+	.hero-content {
 		/* vertically align inside parent element */
 		display: table-cell;
 		vertical-align: middle;

@@ -12,73 +12,73 @@
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
     </head>
     <body>
-        <header class="cd-auto-hide-header">
-            <div class="logo"><a href="#0"><img src="/public/images/BandOfMe100x100.png" alt="Logo" height="55px"></a></div>
+        <header class="auto-hide-header">
+            <div class="logo"><a href="#0"></a></div>
 
-            <nav class="cd-primary-nav">
-                <a href="#cd-navigation" class="nav-trigger">
+            <nav class="primary-nav">
+                <a href="#navigation" class="nav-trigger">
                     <span>
                         <em aria-hidden="true"></em>
                         Menu
                     </span>
                 </a> <!-- .nav-trigger -->
 
-                <ul id="cd-navigation">
+                <ul id="navigation">
                     <li><a href="#0">Home</a></li>
-                    <li><a href="#0">About</a></li>
+                    <li><a href="#0" class="modal-trigger" data-target="#login-modal">Login</a></li>
                 </ul>
-            </nav> <!-- .cd-primary-nav -->
-        </header> <!-- .cd-auto-hide-header -->
+            </nav> <!-- .primary-nav -->
+        </header> <!-- .auto-hide-header -->
 
 
 
-        <section class="cd-hero">
-            <div class="cd-hero-content">
+        <section class="hero">
+            <div class="hero-content">
                 <svg xmlns="http://www.w3.org/2000/svg" height="50%"   id="band-of-me">
-                <defs>
-                <style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;}</style>
-                </defs>
-                <title>Asset 2</title>
-                <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
-                <line class="cls-1" x1="1" y1="1" x2="1" y2="120.44"/>
-                <path class="cls-1" d="M1,48.16H12A23.58,23.58,0,0,0,12,1H1"/>
-                <path class="cls-1" d="M1,120.44H17.86a36.14,36.14,0,0,0,0-72.28H1"/>
-                <line class="cls-1" x1="5.69" y1="1" x2="5.69" y2="120.44"/>
-                <circle class="cls-1" cx="95.31" cy="84.3" r="36.14"/>
-                <line class="cls-1" x1="95.31" y1="120.44" x2="95.31" y2="48.16"/>
-                <line class="cls-1" x1="59.17" y1="30.01" x2="131.45" y2="30.01"/>
-                <line class="cls-1" x1="131.45" y1="120.44" x2="131.45" y2="30.01"/>
-                <line class="cls-1" x1="138.78" y1="30.01" x2="138.78" y2="120.44"/>
-                <line class="cls-1" x1="198.15" y1="120.44" x2="138.78" y2="30.01"/>
-                <line class="cls-1" x1="198.15" y1="30.01" x2="198.15" y2="120.44"/>
-                <line class="cls-1" x1="137.81" y1="30.01" x2="144.39" y2="30.01"/>
-                <line class="cls-1" x1="198.15" y1="111.9" x2="144.39" y2="30.01"/>
-                <line class="cls-1" x1="138.78" y1="120.44" x2="177.03" y2="88.27"/>
-                <circle class="cls-1" cx="239.89" cy="84.3" r="36.14"/>
-                <line class="cls-1" x1="271.87" y1="1" x2="271.87" y2="120.44"/>
-                <line class="cls-1" x1="276.19" y1="0.97" x2="276.19" y2="120.41"/>
-                <line class="cls-1" x1="214.62" y1="58.63" x2="265.17" y2="109.18"/>
-                <circle class="cls-1" cx="43.42" cy="181.75" r="17.98"/>
-                <line class="cls-1" x1="43.42" y1="200.03" x2="43.42" y2="164.07"/>
-                <line class="cls-1" x1="25.44" y1="182.05" x2="43.42" y2="182.05"/>
-                <path class="cls-1" d="M88.35,157.51V152a11.73,11.73,0,0,0-23.46,0v47.69"/>
-                <line class="cls-1" x1="61.4" y1="164.07" x2="74.14" y2="164.07"/>
-                <line class="cls-1" x1="112.78" y1="219.65" x2="112.78" y2="129.22"/>
-                <line class="cls-1" x1="172.15" y1="129.22" x2="112.78" y2="219.65"/>
-                <line class="cls-1" x1="172.15" y1="219.65" x2="172.15" y2="129.22"/>
-                <line class="cls-1" x1="111.81" y1="219.65" x2="118.39" y2="219.65"/>
-                <line class="cls-1" x1="172.15" y1="137.76" x2="118.39" y2="219.65"/>
-                <line class="cls-1" x1="112.78" y1="129.22" x2="151.03" y2="161.38"/>
-                <path class="cls-1" d="M250.18,187.56a36.06,36.06,0,1,0-1.61,10.08"/>
-                <line class="cls-1" x1="178.03" y1="186.66" x2="249.53" y2="186.66"/>
-                </g>
-                </g>
+                    <defs>
+                        <style>.cls-1{fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-width:2px;}</style>
+                    </defs>
+                    <title>Asset 2</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <line class="cls-1" x1="1" y1="1" x2="1" y2="120.44"/>
+                            <path class="cls-1" d="M1,48.16H12A23.58,23.58,0,0,0,12,1H1"/>
+                            <path class="cls-1" d="M1,120.44H17.86a36.14,36.14,0,0,0,0-72.28H1"/>
+                            <line class="cls-1" x1="5.69" y1="1" x2="5.69" y2="120.44"/>
+                            <circle class="cls-1" cx="95.31" cy="84.3" r="36.14"/>
+                            <line class="cls-1" x1="95.31" y1="120.44" x2="95.31" y2="48.16"/>
+                            <line class="cls-1" x1="59.17" y1="30.01" x2="131.45" y2="30.01"/>
+                            <line class="cls-1" x1="131.45" y1="120.44" x2="131.45" y2="30.01"/>
+                            <line class="cls-1" x1="138.78" y1="30.01" x2="138.78" y2="120.44"/>
+                            <line class="cls-1" x1="198.15" y1="120.44" x2="138.78" y2="30.01"/>
+                            <line class="cls-1" x1="198.15" y1="30.01" x2="198.15" y2="120.44"/>
+                            <line class="cls-1" x1="137.81" y1="30.01" x2="144.39" y2="30.01"/>
+                            <line class="cls-1" x1="198.15" y1="111.9" x2="144.39" y2="30.01"/>
+                            <line class="cls-1" x1="138.78" y1="120.44" x2="177.03" y2="88.27"/>
+                            <circle class="cls-1" cx="239.89" cy="84.3" r="36.14"/>
+                            <line class="cls-1" x1="271.87" y1="1" x2="271.87" y2="120.44"/>
+                            <line class="cls-1" x1="276.19" y1="0.97" x2="276.19" y2="120.41"/>
+                            <line class="cls-1" x1="214.62" y1="58.63" x2="265.17" y2="109.18"/>
+                            <circle class="cls-1" cx="43.42" cy="181.75" r="17.98"/>
+                            <line class="cls-1" x1="43.42" y1="200.03" x2="43.42" y2="164.07"/>
+                            <line class="cls-1" x1="25.44" y1="182.05" x2="43.42" y2="182.05"/>
+                            <path class="cls-1" d="M88.35,157.51V152a11.73,11.73,0,0,0-23.46,0v47.69"/>
+                            <line class="cls-1" x1="61.4" y1="164.07" x2="74.14" y2="164.07"/>
+                            <line class="cls-1" x1="112.78" y1="219.65" x2="112.78" y2="129.22"/>
+                            <line class="cls-1" x1="172.15" y1="129.22" x2="112.78" y2="219.65"/>
+                            <line class="cls-1" x1="172.15" y1="219.65" x2="172.15" y2="129.22"/>
+                            <line class="cls-1" x1="111.81" y1="219.65" x2="118.39" y2="219.65"/>
+                            <line class="cls-1" x1="172.15" y1="137.76" x2="118.39" y2="219.65"/>
+                            <line class="cls-1" x1="112.78" y1="129.22" x2="151.03" y2="161.38"/>
+                            <path class="cls-1" d="M250.18,187.56a36.06,36.06,0,1,0-1.61,10.08"/>
+                            <line class="cls-1" x1="178.03" y1="186.66" x2="249.53" y2="186.66"/>
+                        </g>
+                    </g>
                 </svg>
             </div>
-        </section> <!-- .cd-hero -->
+        </section> <!-- .hero -->
 
-        <nav class="cd-secondary-nav">
+        <nav class="secondary-nav">
             <ul>
                 <li><a class="active" href="#0">Intro</a></li>
                 <li><a href="#0">Features</a></li>
@@ -89,9 +89,9 @@
                 <li><a href="#0">Compare</a></li>
                 <li><a href="#0">Buy</a></li>
             </ul>
-        </nav> <!-- .cd-secondary-nav -->
+        </nav> <!-- .secondary-nav -->
 
-    <main class="cd-main-content sub-nav-hero">
+    <main class="main-content sub-nav-hero">
         <div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quos, voluptate, sunt, in suscipit quibusdam quis dignissimos eligendi repellendus ipsam exercitationem adipisci nostrum fugit accusamus quae cum nisi accusantium eaque.
@@ -121,14 +121,39 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
             </p>
         </div>
-    </main> <!-- .cd-main-content -->
+    </main> <!-- .main-content -->
 
+    <div id="login-modal" class="modal-login">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close"></span>
+            </div>
+            <div class="modal-body">
+                <p>Please login to the app to see more features...</p>
+                <div class="form">
+                    <div class="group">      
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="group">      
+                        <input type="password" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Password</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         #{doLayout /}
         
         <script src="@{'/public/javascripts/jquery-3.0.0.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
+        <script src="@{'/public/javascripts/components.js'}"></script> <!-- Resource jQuery -->
         #{get 'moreScripts' /}
-        <script src="@{'/public/javascripts/main.js'}"></script> <!-- Resource jQuery -->
     </body>
 </html>
 

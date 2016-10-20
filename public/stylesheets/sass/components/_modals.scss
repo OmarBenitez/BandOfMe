@@ -1,0 +1,201 @@
+/* The Modal (background) */
+.modal-login {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.8s;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    /* Modal Content */
+    .modal-content {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        margin-left: -170px;
+        width: 340px;
+        height: 500px;
+        background-color: $nav-blue;
+        -webkit-box-shadow: 0px -2px 0px 0px $pink;
+        -moz-box-shadow: 0px -2px 0px 0px $pink;
+        box-shadow: 0px -2px 0px 0px $pink;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-timing-function: linear;
+        animation-name: slideIn;
+        animation-duration: 0.8s;
+        animation-timing-function: linear;
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        right: 8px;
+        top: 15px;
+        height: 25px;
+        width: 25px;
+        &:after, &:before {
+            content: '';
+            display: block;
+            border-bottom: 2px solid $bg;
+            width: 20px;
+            position: absolute;
+            top:5px;
+            -webkit-transform: rotate(45deg);
+        }
+        &:before {
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
+    .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-header {
+        padding: 20px 20px;
+        color: white;
+    }
+
+    .modal-body {padding: 2px 16px;}
+
+    .modal-footer {
+        padding: 15px 16px;
+        background-color: #5cb85c;
+        color: white;
+    }
+
+    &.in {
+        display: block;
+    }
+
+    .form {
+        padding-top: 35px;
+
+        .group { 
+            position:relative; 
+            margin-bottom:45px; 
+        }
+        input {
+            background: $nav-blue;
+            font-size:18px;
+            padding:10px 10px 10px 5px;
+            display:block;
+            width:300px;
+            border:none;
+            border-bottom:1px solid $green;
+        }
+        input:focus { 
+            outline:none; 
+        }
+        label 				 {
+            color:#999; 
+            font-weight:normal;
+            position:absolute;
+            pointer-events:none;
+            left:5px;
+            top:13px;
+            transition:0.2s ease all; 
+            -moz-transition:0.2s ease all; 
+            -webkit-transition:0.2s ease all;
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label 		{
+            top:-20px;
+            font-size:14px;
+            color: $green;
+        }
+
+        /* BOTTOM BARS ================================= */
+        .bar 	{ position:relative; display:block; width:300px; }
+        .bar:before, .bar:after 	{
+            content:'';
+            height:2px; 
+            width:0;
+            bottom:1px; 
+            position:absolute;
+            background: $green; 
+            transition:0.2s ease all; 
+            -moz-transition:0.2s ease all; 
+            -webkit-transition:0.2s ease all;
+        }
+        .bar:before {
+            left:50%;
+        }
+        .bar:after {
+            right:50%; 
+        }
+
+        /* active state */
+        input:focus ~ .bar:before, input:focus ~ .bar:after {
+            width:50%;
+        }
+
+        /* HIGHLIGHTER ================================== */
+        .highlight {
+            position:absolute;
+            height:60%; 
+            width:100px; 
+            top:25%; 
+            left:0;
+            pointer-events:none;
+            opacity:0.5;
+        }
+
+        /* active state */
+        input:focus ~ .highlight {
+            -webkit-animation:inputHighlighter 0.3s ease;
+            -moz-animation:inputHighlighter 0.3s ease;
+            animation:inputHighlighter 0.3s ease;
+        }
+
+    }
+
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+
+@-webkit-keyframes slideIn {
+    from {top: -3000px;}
+    to {top: 0;}
+}
+
+@keyframes slideIn {
+    from {top: -3000px;}
+    to {top: 0;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
